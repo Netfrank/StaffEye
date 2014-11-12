@@ -3,10 +3,11 @@
 html, body {
 	margin: 0px; padding: 0px;
 	text-align: center;
+	font-family: Museo;
 }
 
 .contenedor {
-	width: 1000px; margin: 0px auto;
+	width: 1100px; margin: 0px auto;
 	text-align: left;
 }
 
@@ -19,5 +20,129 @@ header #logo{
 	margin: 5px 0px 0px;
 }
 
-#elemento
-	color #FF0000
+header #user-box{
+	float: right; width: 400px; height: 45px;
+}
+
+header #user-box div{
+	float: left; text-align: right;
+	margin: 0px 10px 0px 0px;
+}
+
+header #user-box div p{
+	margin: 0px; color: #CCC;
+}
+
+header #user-box div .user-name{
+	font-size: 14px; font-weight: 300; margin: 2px 0px -1px;
+}
+
+header #user-box div .user-area{
+	font-size: 10px; font-weight: 500;
+}
+
+header #user-box div .user-area span{
+	color: #E6CA4D; font-style: italic;
+}
+
+header #user-box div .user-percent{
+	font-size: 10px; font-weight: 500; color: #E6CA4D;
+}
+
+header #user-box div .user-percent img{
+	margin: 0px 0px -3px;
+}
+
+header #user-box a.user-options{
+	float: left; width: 60px; height: 45px; background: #F3F1F2;
+	text-decoration: none;
+}
+
+header #user-box a.user-options img{
+	margin: 8px 6px 0px;
+}
+
+header #user-box a.user-options span{
+	position: relative; top: -38px; left: 30px; background: #F85D5B;
+	color: #FFF; border-radius: 8px; -moz-border-radius: 8px;
+	-webkit-border-radius: 8px; font-size: 10px; display: block;
+	width: 26px; text-align: center; padding: 2px 0px;
+	font-weight: 700;
+}
+
+header #user-box>a.user-config{
+	float: left; width: 60px; height: 45px;
+}
+
+
+/* SECTION (CUERPO DEL SISTEMA) */
+
+section{
+	width: 1100px; height: auto; overflow: hidden;
+	margin: 0px auto; text-align: left;
+}
+
+section>h1{
+	margin: 45px 0px 0px; font-size: 30px; color: #444;
+	font-weight: 500; border-bottom: solid 2px #E6CA4D;
+}
+
+section>div{
+	margin: 30px 0px; font-size: 22px; color: #444;
+}
+
+section>div select{
+	font-family: Museo; border: none; background: #F4F4F4;
+	width: 229px; height: 22px; font-size: 18px;
+	margin: 0px 20px; color: #888;
+}
+
+
+/* BOXES DE TAREAS */
+
+.items{
+	width: 176px; float: left; margin: 0px 55px 0px 0px;
+	background: url(../img/bg-boxes.jpg) 0 0; border-radius: 4px;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px;
+	text-align: center; color: #555;
+}
+
+.items h3{
+	font-size: 14px; font-weight: 300; margin: 16px 20px 14px;
+}
+
+#calendario{
+	border-radius: 4px; -moz-border-radius: 4px;
+	-webkit-border-radius: 4px; border: solid 1px #333;
+	overflow: hidden; background: #FFF;
+}
+
+#calendario .calendario_cabecera{
+	background: #FFEC96; height: auto; overflow: hidden;
+}
+
+#calendario .calendario_cabecera div{
+	float: left; width: 126px; font-size: 14px; text-align: center;
+	color: #888; margin: 3px 0px 0px;
+}
+
+#calendario .calendario_cabecera div span{
+	display: block; padding: 2px 0px; font-size: 10px; background: #F8F8F8;
+	width: 34px; text-align: center; margin: 2px auto 3px; border-radius: 3px;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+
+#calendario .calendario_cabecera a{
+	font-family: Arial; font-size: 8px; text-decoration: none; color: #444;
+	line-height: 40px; float: left; width: 24px; text-align: center;
+}
+
+#calendario .calendario_days ul{
+	margin: 0px 3px; padding: 0px; list-style: none;
+}
+
+#calendario .calendario_days ul li{
+	font-size: 7px; font-weight: 900; float: left;
+	width: 24px; text-align: center; line-height: 26px;
+	text-transform: uppercase; color: #777;
+}
