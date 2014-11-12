@@ -26,7 +26,7 @@ header #user-box{
 
 header #user-box div{
 	float: left; text-align: right;
-	margin: 0px 10px 0px 0px;
+	margin: 0px 10px 0px 0px; width: 298px;
 }
 
 header #user-box div p{
@@ -71,7 +71,7 @@ header #user-box a.user-options span{
 }
 
 header #user-box>a.user-config{
-	float: left; width: 60px; height: 45px;
+	float: left; width: 42px; height: 45px;
 }
 
 
@@ -84,7 +84,7 @@ section{
 
 section>h1{
 	margin: 45px 0px 0px; font-size: 30px; color: #444;
-	font-weight: 500; border-bottom: solid 2px #E6CA4D;
+	font-weight: 300; border-bottom: solid 2px #E6CA4D;
 }
 
 section>div{
@@ -101,14 +101,64 @@ section>div select{
 /* BOXES DE TAREAS */
 
 .items{
-	width: 176px; float: left; margin: 0px 55px 0px 0px;
-	background: url(../img/bg-boxes.jpg) 0 0; border-radius: 4px;
-	-moz-border-radius: 4px; -webkit-border-radius: 4px;
-	text-align: center; color: #555;
+	width: 176px;
+	float: left;
+	margin: 0px 55px 40px 0px;
+	background: url(../img/bg-boxes.jpg) 0 0;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	text-align: center;
+	color: #555;
+}
+
+.items:nth-child(n+5){
+	margin: 0px 0px 40px;
 }
 
 .items h3{
-	font-size: 14px; font-weight: 300; margin: 16px 20px 14px;
+	font-size: 14px; font-weight: 300; margin: 13px 25px 10px;
+}
+
+.items img{
+	margin: 0px 0px 8px;
+}
+
+.items p{
+	font-size: 13px; margin: 0px 0px 20px;
+}
+
+.items p span{
+	font-size: 10px; display: block; font-weight: 500;
+}
+
+.items div.box{
+	padding: 10px 15px; background: url(../img/bg-bottom-box.png) repeat;
+}
+
+.items div.box a{
+	display: block; font-size: 13px; color: #FFF;
+	padding: 6px 1px; text-decoration: none;
+}
+
+.items div.box a.lightblue{
+	background: #308BD4; 
+}
+
+.items div.box a.red{
+	background: #FF3D3D; 
+}
+
+.items div.box a.green{
+	background: #01DD5F; 
+}
+
+.items div.box a.orange{
+	background: #FFA73D; 
+}
+
+.items div.box a.white{
+	background: #FFF; color: #666;
 }
 
 #calendario{
