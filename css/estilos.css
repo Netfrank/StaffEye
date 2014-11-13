@@ -88,7 +88,7 @@ section>h1{
 }
 
 section>div{
-	margin: 26px 0px 27px; font-size: 22px; color: #444;
+	margin: 26px 0px 26px; font-size: 22px; color: #444;
 }
 
 section>div select{
@@ -156,6 +156,9 @@ section>div select{
 	background: #FFF; color: #666;
 }
 
+
+/* CALENDARIO */
+
 #calendario{
 	border-radius: 4px; -moz-border-radius: 4px;
 	-webkit-border-radius: 4px; border: solid 1px #333;
@@ -188,6 +191,74 @@ section>div select{
 
 #calendario .calendario_days ul li{
 	font-size: 7px; font-weight: 900; float: left;
-	width: 24px; text-align: center; line-height: 26px;
+	width: 24px; text-align: center; line-height: 23px;
 	text-transform: uppercase; color: #777;
+}
+
+
+/* RELOJ DEL CALENDARIO */
+
+#reloj{
+	border-radius: 4px; -moz-border-radius: 4px;
+	-webkit-border-radius: 4px; border: solid 1px #333;
+	background: #FFF; border-top: none;
+	height: auto; overflow: hidden;
+}
+
+#reloj .reloj_cabecera{
+	background: #FFEC96; height: auto; overflow: hidden;
+	font-size: 14px; text-align: center; color: #888;
+	line-height: 20px;
+}
+
+#reloj ul{
+	height: auto; overflow: hidden; list-style: none;
+	margin: 0px auto; padding: 4px 0px; width: 97px;
+}
+
+#reloj ul li{
+	float: left; margin: 0px 10px 0px 0px;
+	font-size: 17px; color: #777;
+}
+
+
+/* CONTROL [GUARDAR/CANCELAR] */
+
+#control{
+	border-radius: 4px; -moz-border-radius: 4px;
+	-webkit-border-radius: 4px; border: solid 1px #333;
+	background: #000; border-top: none;
+	height: auto; overflow: hidden;
+}
+
+#control a{
+	border-radius: 2px; -moz-border-radius: 2px;
+	-webkit-border-radius: 2px; background: #01DD5F;
+	width: 87px; float: left; display: block; padding: 4px 0px 3px;	
+	color: #FFF; text-decoration: none; font-size: 14px;
+}
+
+#control a:last-child{
+	background: #FF3D3D; margin: 0px 0px 0px 1px; width: 86px;
+}
+
+
+
+/*  PIE DE PÁGINA / FOOTER */
+
+footer>div{
+	height: 36px; background: #1E1E1E;
+}
+
+footer div>div img{
+	margin: 7px 0px 0px;
+}
+
+footer>div:last-child{
+	height: 11px; background: #E6CA4D;
+	font-size: 10px; font-weight: 700;
+}
+
+footer>div:last-child div{
+	text-align: center;
 }
