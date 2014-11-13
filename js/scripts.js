@@ -11,6 +11,12 @@ $(document).ready(function(){
 		$('.submenu',this).fadeOut('slow');
 		}
 	);
-	
+
+	$('#sidebar, #sidebar-expand').hover(function(){
+		$('#sidebar-expand').css({'display':'block'});
+	}, function(){
+		$('#sidebar-expand').css({'display':'none'});
+	});
+
 	
 });
