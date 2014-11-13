@@ -1,21 +1,22 @@
 
 $(document).ready(function(){
-
 	
 	// MENU
-	$('#menu>li').hover(
+	/*$('#menu>li').hover(
 		function(){
 		$('.submenu',this).stop(true,true).fadeIn('fast');
 		},
 		function(){
 		$('.submenu',this).fadeOut('slow');
 		}
-	);
+	);*/
 
-	$('#sidebar, #sidebar-expand').hover(function(){
-		$('#sidebar-expand').css({'display':'block'});
+	$('#sidebar').hover(function(){
+		$(this).addClass('sidebar');
+		$('.information').delay(200).fadeIn();
 	}, function(){
-		$('#sidebar-expand').css({'display':'none'});
+		$(this).removeClass('sidebar');
+		$('.information').hide();
 	});
 
 	

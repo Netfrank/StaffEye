@@ -4,6 +4,8 @@ html, body {
 	margin: 0px; padding: 0px;
 	text-align: center;
 	font-family: Museo;
+	min-height: 100%;
+	position: relative;
 }
 
 .contenedor {
@@ -271,59 +273,64 @@ footer>div:last-child div{
 /* BARRA LATERAL IZQUIERDA */
 
 #sidebar{
-	position: absolute; width: 66px; height: auto;
+	position: absolute; width: 66px;
 	background: #222; top: 45px; left: 0px;
-	overflow: hidden;
+	overflow: hidden; bottom: 47px;
+	transition: width .2s;
+
 }
+
+.sidebar{
+	width: 268px !important;
+}
+
+#sidebar .user-perfil{
+	height: 134px;
+	background: #B87F6E url(../img/user-sidebar.png) -24px 14px no-repeat;
+}
+
+#sidebar .user-perfil .information{
+	float: right;
+	text-align: right;
+	padding: 13px 16px;
+	display: none;
+	font-size: 13px;
+	color: #FFF;
+}
+
+#sidebar .user-perfil .information span{
+	display: block;
+	margin-bottom: 5px;
+}
+
 
 #sidebar ul{
 	margin: -4px 0px 0px; padding: 0px; list-style: none;
 }
 
 #sidebar ul li{
-	color: #FFF; font-size: 40px; line-height: 64px;
-	border-bottom: solid 1px #E6CA4D;
+	text-align: left;
 }
 
-#sidebar ul li:first-child{
-	height: 64px; background: #E6CA4D;
+#sidebar ul li a{
+	font-size: 16px; line-height: 64px; background: #3E3E3E;
+	border-bottom: solid 1px #E6CA4D; display: block;
+	padding: 0px 0px 0px 0px; color: #AAA; height: 64px;
+	text-decoration: none; overflow: hidden;
+}
+
+#sidebar ul li a span{
+	color: #FFF; font-size: 40px; line-height: 64px;
+	display: block;	width: 66px; float: left;
+	text-align: center; background: #222;
+	margin: 0px 14px 0px 0px;
+}
+
+#sidebar ul li:first-child a{
+	background: #E6CA4D; color: #555;
 }
 
 #sidebar ul li img{
-	height: 64px;
-}
-
-#sidebar img.foto {
-	margin: 0px; padding: 0px;
-}
-
-
-#sidebar-expand{
-	position: absolute; width: 202px; height: auto;
-	background: #3E3E3E; top: 45px; left: 66px;
-	overflow: hidden; display: none;
-}
-
-.user-perfil{
-	height: 134px; background: #B87F6E;
-}
-
-.insignia{
-	height: 66px; background: #E6CA4D;
-}
-
-#sidebar-expand ul{
-	margin: 0px 0px 0px; padding: 0px;
-	list-style: none; text-align: left;
-}
-
-#sidebar-expand ul li a{
-	color: #FFF; font-size: 16px; line-height: 64px;
-	border-bottom: solid 1px #E6CA4D; display: block;
-	padding: 0px 0px 0px 15px; color: #AAA;
-	text-decoration: none;
-}
-
-#sidebar-expand ul li:first-child a{
-	background: #E6CA4D; color: #555;
+	height: 64px; float: left;
+	margin-right: 14px;
 }
