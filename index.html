@@ -18,7 +18,7 @@
 		
 			<div class="contenedor">
 		
-				<a href="javascript:;" id="loguito">
+				<a href="javascript:;">
 					<img src="img/logo.jpg" id="logo" />
 				</a>
 				
@@ -30,14 +30,23 @@
 						<p class="user-percent">60% <img src="img/progressbar-60.jpg"></p>
 					</div>
 
-					<a href="javascript:;" class="user-options" id="user-options">
+					<a href="javascript:;" id="user-options">
 						<img src="img/user.jpg">
 						<span>144</span>
 					</a>
 
-					<a href="javascript:;" class="user-config">
-
+					<a href="javascript:;" id="user-config">
+						<span class="icon-cog"></span>
 					</a>
+
+					<ul id="user-options-menu">
+
+						<li><a href="javascript:;">Awaiting Assessments<span>44</span></a></li>
+						<li><a href="javascript:;">Sent Assessments<span>50</span></a></li>
+						<li><a href="javascript:;">Expired Assessments<span>30</span></a></li>
+						<li><a href="javascript:;">Created Assessments<span>20</span></a></li>
+
+					</ul>
 
 				</div>
 				
@@ -155,6 +164,90 @@
 				<li><a href=""><span class="icon-repo"></span>Manage Skills</a></li>
 				<li><a href=""><span class="icon-camera"></span>Interview Devolution</a></li>
 			</ul>
+
+		</div>
+
+		<div id="chatbar">
+
+			<h2><a href="javascript:;" id="chatbar-out"><span class="icon-playback-play"></span> Interviews</a></h2>
+
+			<table id="interviews">
+
+				<tr>
+					<th>Username</th>
+					<th>Date</th>
+					<th>Time</th>
+				</tr>
+
+				<tr>
+					<td><span class="icon-bubbles"></span>Kathryn Murphy</td>
+					<td><div>JAN</div><span>8</span>Wednesday</td>
+					<td>1:50 PM</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" class="messages">
+						<div class="other">
+							<p>Hello Kathryn, I have some personal stuff to do on that day, so I prefer, if you can, on Thursday 9th. Are you ok with it?<span>Yesterday - Megan Collins</span></p>
+							<img src="img/user-other.jpg" />
+						</div>
+						<div class="me">
+							<p>OK Megan, I will schedule it at thursday afternoon. Regards!<span>Today - Kathryn Murphy</span></p>
+							<img src="img/user-me.jpg" />
+						</div>
+						<div>
+							<textarea class="comment">Write the reason why you can't accept.</textarea>
+							<a href="">Submit</a>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td><span class="icon-camera"></span>Kathryn Murphy</td>
+					<td><div>JAN</div><span>8</span>Wednesday</td>
+					<td>1:50 PM</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" class="messages">
+					</td>
+				</tr>
+
+				<tr>
+					<td><span class="icon-bubbles"></span>Kathryn Murphy</td>
+					<td><div>JAN</div><span>8</span>Wednesday</td>
+					<td>1:50 PM</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" class="messages">
+						<div class="other">
+							<p>Hello Kathryn, I have some personal stuff to do on that day, so I prefer, if you can, on Thursday 9th. Are you ok with it?<span>Yesterday - Megan Collins</span></p>
+							<img src="img/user-other.jpg" />
+						</div>
+						<div class="me">
+							<p>OK Megan, I will schedule it at thursday afternoon. Regards!<span>Today - Kathryn Murphy</span></p>
+							<img src="img/user-me.jpg" />
+						</div>
+						<div>
+							<textarea class="comment">Write the reason why you can't accept.</textarea>
+							<a href="">Submit</a>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td><span class="icon-camera"></span>Kathryn Murphy</td>
+					<td><div>JAN</div><span>8</span>Wednesday</td>
+					<td>1:50 PM</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" class="messages">
+					</td>
+				</tr>
+
+			</table>
 
 		</div>
 
